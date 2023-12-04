@@ -9,7 +9,7 @@ for i in range(t):
   result = fact(num)
   print(result)
   
-# Alternative 
+# Alternative Method 
 
 def fact(num):
     result = 1
