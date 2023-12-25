@@ -16,7 +16,7 @@ arr = list(map(int, input().split()))
 resultant_array = square_sorted(arr)
 print(*resultant_array)
 
-
-
+# TC = O(N)
+# SC = O(N)
 
 
