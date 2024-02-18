@@ -15,7 +15,7 @@
 # print(result)
 
 
-# Hashing O(n) time | O(1) space
+# Hashing O(n) time | O(n) space
 def twoNumberSum(array, targetSum):
     nums = {}
     for num in range(len(array)):
