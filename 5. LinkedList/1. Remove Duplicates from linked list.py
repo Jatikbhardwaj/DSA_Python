@@ -16,15 +16,12 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = LinkedListNode(value)
-
     def print_list(self):
         current = self.head
         while current:
             print(current.value, end=" -> ")
             current = current.next
         print("None")
-
-
 def removeDuplicatesFromLinkedList(linkedlist):
     currentNode = linkedlist.head
     while currentNode is not None:
@@ -33,12 +30,10 @@ def removeDuplicatesFromLinkedList(linkedlist):
             nextDistinctNode is not None and nextDistinctNode.value == currentNode.value
         ):
             nextDistinctNode = nextDistinctNode.next
-
         currentNode.next = nextDistinctNode
         currentNode = nextDistinctNode
 
     return linkedlist
-
 
 my_linked_list = LinkedList()
 my_linked_list.append(1)
@@ -58,3 +53,4 @@ removeDuplicatesFromLinkedList(my_linked_list)
 # Print the modified linked list for debugging
 print("Linked List after Removing Duplicates:")
 my_linked_list.print_list()
+
