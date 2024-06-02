@@ -17,7 +17,8 @@ arr = list(map(int,input().split()))
 Q = int(input())
 
 prefix_sum = [0] * (N + 1)
-prefix_sum[1:] = [sum(arr[:i + 1]) for i in range(N)]
+for i in range(1, N+1):
+    prefix_sum[i] = prefix_sum[i - 1] + arr[i - 1]
 
 for _ in range(Q):
     l, r = map(int,input().split())
