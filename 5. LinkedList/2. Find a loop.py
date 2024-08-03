@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 def has_loop(head):
     visited = set()
     current = head
@@ -13,6 +14,7 @@ def has_loop(head):
             visited.add(current)
             current = current.next
     return False
+
 
 node1 = Node(1)
 node2 = Node(2)

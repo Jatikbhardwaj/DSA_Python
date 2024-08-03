@@ -13,8 +13,9 @@ def evaluate_postfix(expresssion):
             elif char == '*':
                 stack.append(a * b)
             elif char == '/':
-                stack.append(int(a/b))
+                stack.append(int(a / b))
     return stack[-1] if stack else None
 
-expression = list(map(str,input().split()))
+
+expression = list(map(str, input().split()))
 result = print(evaluate_postfix(expression))

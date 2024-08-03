@@ -15,6 +15,7 @@ def find_corresponding_indices(bracket_sequence):
 
     return result
 
+
 bracket_sequence = input()
 result = find_corresponding_indices(bracket_sequence)
 print(*result)
