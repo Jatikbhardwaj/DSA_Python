@@ -1,6 +1,6 @@
 def count_glasses(n, A):
     left = 0
-    right = n-1
+    right = n - 1
     aman_drunk = 0
     bittu_drunk = 0
     aman_glasses = 0
@@ -18,9 +18,10 @@ def count_glasses(n, A):
 
     return aman_glasses, bittu_glasses
 
+
 n = int(input())
 
-A = list(map(int,input().split()))
+A = list(map(int, input().split()))
 
-aman_glasses, bittu_glasses = count_glasses(n,A)
+aman_glasses, bittu_glasses = count_glasses(n, A)
 print(aman_glasses, bittu_glasses)

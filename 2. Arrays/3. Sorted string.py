@@ -15,8 +15,10 @@ def sorted_string(input_string):
         letter_counts[index] += 1
     sorted_letters = ''
     for i in range(26):
-        sorted_letters += chr(ord('a') + i ) * letter_counts[i]
+        sorted_letters += chr(ord('a') + i) * letter_counts[i]
     return sorted_letters
+
+
 input_string = input()
 print(sorted_string(input_string))
 

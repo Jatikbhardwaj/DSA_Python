@@ -23,7 +23,8 @@ def check_sequence(in_seq, out_seq):
         return "Yes"
     else:
         return "No"
-    
+
+
 n = int(input())
 # in_seq = []
 # for _ in range(n):
@@ -32,7 +33,7 @@ n = int(input())
 # for _ in range(n):
 #     out_seq.extend(map(int, input().split(',')))
 in_seq = list(map(int, input().split(',')))
-out_seq = list(map(int,input().split(',')))
+out_seq = list(map(int, input().split(',')))
 result = check_sequence(in_seq, out_seq)
 print(result)
 

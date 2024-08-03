@@ -19,7 +19,7 @@ class Stack:
         the object is equal to -1.
         """
         return self.top == -1
-    
+
     def isFull(self):
         """
         The function `isFull` checks if the stack is full by comparing the top index with the capacity minus
@@ -28,8 +28,8 @@ class Stack:
         not. It checks if the `top` index of the stack is equal to `capacity - 1` and returns `True` if it
         is full, otherwise it returns `False`.
         """
-        return self.top == self.capacity -1 
-    
+        return self.top == self.capacity - 1
+
     def push(self, item):
         """
         The `push` function adds an item to the stack if it is not full, otherwise it raises an
@@ -44,7 +44,7 @@ class Stack:
             self.stack[self.top] = item
         else:
             raise OverflowError("Stack is full")
-        
+
     def pop(self):
         """
         The `pop` function removes and returns the top element of a stack if it is not empty, otherwise it
@@ -58,16 +58,17 @@ class Stack:
             return item
         else:
             raise IndexError("pop from empty stack")
-        
+
     def peek(self):
         if not self.isEmpty():
             return self.stack[self.top]
         else:
             return None
-        
+
     def size(self):
         return self.top + 1
-    
+
+
 stack = Stack(5)
 stack.push(1)
 stack.push(2)
@@ -80,5 +81,3 @@ print("Peek:", stack.peek())  # Output: 3
 popped_item = stack.pop()
 print("Popped item:", popped_item)  # Output: 3
 print("Stack after pop:", stack.stack[:stack.size()])  # Output: [1, 2]
-
-        

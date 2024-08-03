@@ -32,7 +32,6 @@ targetSum = int(input())
 result = twoNumberSum(array, targetSum)
 print(result)
 
-
 # When array is sorted:-
 # array = list(map(int,input().split()))
 # target = int(input())
