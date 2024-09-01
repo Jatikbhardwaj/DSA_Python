@@ -16,7 +16,25 @@ def rotate_array_inplace(arr: list, rotations: int):
     return arr
 
 
-print(*rotate_array_inplace(arr, k))  # For right rotation, change the order of the reverse_array calls i.e n-k
+print(*rotate_array_inplace(arr, n-k))  # For right rotation, change the order of the reverse_array calls i.e k
 
 # TC = O(N)
 # SC = O(1)
+
+
+# # ** Using Slicing TC O(N) , SC O(N)
+# def rotate_left(array, k):
+#     return array[k:] + array[:k]
+#
+#
+# def rotate_right(array, k):
+#     return array[-k:] + array[:-k]
+#
+#
+# n, k = map(int, input().split())
+# array = list(map(int, input().split()))
+#
+# result = rotate_left(array, k)
+# print(*result)
+# result = rotate_right(array, k)
+# print(*result)
